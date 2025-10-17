@@ -4,9 +4,12 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content=" Diabetes risk check">
+   <meta name="author" content="Disha">
+   <meta name="keywords" content="Diabetes, diabetes checkup, diabetes risk,health-risk">
    <link rel="stylesheet" href="../Css/app.css">
    <title>D.check</title>
-   <link rel="icon" type="image" href="images/logofavicon.png">
+   <link rel="icon" type="image/png" href="images/logofavicon.png">
 </head>
 
 <body>
@@ -18,33 +21,50 @@
       <li><a href="check.html">Check Up</a></li>
       <li><a href="weekly.html">Weekly Report</a></li>
       <li><a href="articles.html">Articles</a></li>
-      <li><a class="Link" href="login.html">Login</a></li>
-      <li><a class="Link" href="Register.html">Register</a></li>
+      <li><a href="login.html">Log in</a></li>
+      <li><a href="register.html">Sign in </a></li>
    </ul>
 </nav>
 
+
+<!--Hedear-->
 <header>
+
    <h1>A Fit, Healthy body - Best Fashion Statement</h1>
-   <img width=500 src ="images/Patient_clinic.png" alt="Patient_clinic" float="right">
-   <button onclick="document.location='check.html'"=>Check your dibetes risk </button>
-   <br>Your data are private, safe and secure
+
+   <img width=500 src ="images/Patient_clinic.png" alt="Patient_clinic">
+
+   <p>Don&apos;t wait for symptoms. D.Check helps you decode your body&apos;s warning signs in seconds</p>
+
+   <button onclick="document.location='check.html'">
+      Check Your Diabetes Risk 
+   </button>
+
+   <br><small>Built with privacy at the heart of every check</small>
     
 </header>
 
 <main>
 
+   <section id="intro">
+      <h2>Why Check Early?</h2>
+      <p>More than half of diabetes cases remain undiagnosed until complications begin. 
+      D.Check helps you take control early — fast, private, and AI-driven.</p>
+   </section>
+    
 
 
-   <section id="Why this?">
-
-
-      <p>
+   <section id="why-this">
+      <h2>
          <strong>Diabetes Risk Ecosystem</strong>
-      </p>
+      </h2>
 
-      <p>
-         Our AI-driven platform focuses on making <strong>early diabetes detection</strong>simple, accessible, and awareness-driven for everyone.
-      </p>
+      <h3>Diabetes doesn&apos;t start overnight — it builds silently. 
+         Our AI platform makes early detection possible from simple, everyday signals.</h3>
+
+      <h3>
+         Our AI-driven platform focuses on making <strong>early diabetes detection </strong>simple, accessible, and awareness-driven for everyone.
+      </h3>
 
       <ul>
          <li>Early risk checks performed through voice, PPG, and lifestyle data.</li>
@@ -60,111 +80,115 @@
 
    <section id ="how-to-use">
 
-      <p>How does D.Check work?</p>
-      <p>Do a dibetes risk check in 3 steps. Its that simple!</h3>
-      <ul>
-         <li>Speak a short fixed phrase (e.g., “Health is my greatest wealth”) for 6&dash;10 seconds.
-         Our system analyzes vocal tone and micro-variations to extract health-related acoustic features <img width="200" src="images/record.png" alt=" Step 1 recording logo"></li>
-            
-         <li>Place your fingertip gently on your phone&comma;s camera with the flash on for 30 seconds.
-         We extract heart-rate and pulse-wave features from color intensity changes.<img width="200" src="images/scaner.png" alt="Step 2 finger scanner logo"></li>
+      <h2>How does D.Check work?</h2>
 
-         <li>Answer a few questions on age, height, weight, and lifestyle.
-         Your responses provide context that improves prediction accuracy.<img width="200" src="images/survey.png" alt=" Step 3survey logo"></li>
+      <h3>Do a dibetes risk check in 3 steps. It&apos;s that simple!</h3>
+      <ul>
+         <li>Speak a short phrase for 6&dash;10 seconds for voice analysis. <img width="200" src="images/record.png" alt=" Step 1 recording logo"></li>
+            
+         <li>Place your fingertip on your phone camera for 30 seconds for pulse data.<img width="200" src="images/scaner.png" alt="Step 2 finger scanner logo"></li>
+
+         <li>Answer a quick survey for personalized insights<img width="200" src="images/survey.png" alt=" Step 3survey logo"></li>
       
-         <li>Receive an AI-based health-risk score (screening only, not diagnostic) and suggested next actions.
-         All data are encrypted and processed securely<img width="200" src="images/result.png" alt="Step 4 Result logo"></li>
+         <li>Get your AI-based risk score and next steps instantly<img width="200" src="images/result.png" alt="Step 4 Result logo"></li>
       </ul>
       
    </section>
 
    <section id="info">
 
-      <p>Browse Latest Info regarding Dibetes</p>
+      <h2>Browse Latest Info regarding Dibetes</h2>
 
       <p>Stay informed with the latest updates, health tips, and global trends about diabetes care and prevention.</p>
 
+      <!--show the iframe of reports while moving in animation-->
+
       <a href="info.html"><button >Browse</button></a>
 
-   </section>  add more html in this
+   </section>
 
 
-   <section id ="Trust">
-      <h3>Your data has only one owner. <span id="You">YOU!</span></h3>
+   <section id ="trust">
+      <h2>Your data has only one owner. <span id="You">YOU!</span></h2>
       <ul>
          <li>You can use D.Check anonymously. No personal details are required.</li>
-         <li>D.Checkdoes not sell or share your data with any third party</li>
+         <li>For our survey feature, we ask for limited details only to personalize your results and improve accuracy</li>
+         <li>D.Check does not sell or share your data with any third party</li>
       </ul>
       <img width="300" src="images/security.png" alt="Data security logo">
    </section>
 
 
-
-
-
+   <section id="cta">
+      <h2>Ready to Check Your Risk?</h2>
+      <p>It takes less than a minute to understand your health better.</p>
+      <button onclick="document.location='check.html'">Start Now</button>
+   </section>
+    
 
   
    <section id="faq">
 
-   <h3>Frequently Asked Questions</h3>
-   <img src="images/FAQ.svg" alt="FAQ logo" width="200">
+      <h2>Frequently Asked Questions</h2>
+      <img src="images/FAQ.svg" alt="FAQ logo" width="200">
 
-   <details>
-      <summary> Q What is this voice and camera&dash;based screening tool?</summary> 
-      <p>This tool helps users record short voice clips and fingertip videos to extract health-related features (like vocal and pulse characteristics).<br> These features, combined with simple lifestyle and health questions, are used to estimate potential diabetes risk — purely for research and awareness, not diagnosis.</p>
-   </details>
+      <details>
+         <summary> Q What is this voice and camera&dash;based screening tool?</summary> 
+         <p>This tool helps users record short voice clips and fingertip videos to extract health-related features (like vocal and pulse characteristics).<br> These features, combined with simple lifestyle and health questions, are used to estimate potential diabetes risk — purely for research and awareness, not diagnosis.</p>
+      </details>
 
-   <details>
-      <summary>Is this an online medical consultation or a diagnostic test?</summary>
-      <p>No. This is <bold>not a medical consultation or diagnostic service</bold>. It&comma;s an educational and research-based screening tool designed to raise awareness about possible risk indicators.</p>
-   </details>
+      <details>
+         <summary>Is this an online medical consultation or a diagnostic test?</summary>
+         <p>No. This is <strong>not a medical consultation or diagnostic service</strong>. It&comma;s an educational and research-based screening tool designed to raise awareness about possible risk indicators.</p>
+      </details>
 
-   <details>
+      <details>
 
-      <summary>How do I use the app?</summary>
+         <summary>How do I use the app?</summary>
 
-      <p>You&comma;ll record:
-         <ol>
-            <li>A short voice sample (saying a fixed sentence for ~8 seconds)</li>
+         <p>You&comma;ll record:
+            <ol>
+               <li>A short voice sample (saying a fixed sentence for ~8 seconds)</li>
 
-            <li>A fingertip video (30 seconds using your phone&comma;s rear camera + flash)</li>
+               <li>A fingertip video (30 seconds using your phone&comma;s rear camera + flash)</li>
 
-            <li>A brief survey (age, weight, lifestyle, etc.)
-            After recording, the app extracts key features automatically and provides a risk score or report.</li>
-            </ol>
-            </p>
-   </details>
+               <li>A brief survey (age, weight, lifestyle, etc.)
+               After recording, the app extracts key features automatically and provides a risk score or report.</li>
+               </ol>
+               </p>
+      </details>
 
-   <details>
-      <summary>Is my data safe and secure?</summary>
-      <p>Yes. All data (audio, video, survey answers) is encrypted and stored securely. Only anonymized numerical features are used for modeling. You can request deletion of your data anytime.</p>
-   </section>
+      <details>
+         <summary>Is my data safe and secure?</summary>
+         <p>Yes. All data (audio, video, survey answers) is encrypted and stored securely. Only anonymized numerical features are used for modeling. You can request deletion of your data anytime.</p>
+      </details>
+      
 
-   <details>
-      <summary>Why do I need to say a fixed phrase?</summary>
-      <p>Using the same phrase for all users ensures that extracted voice features (pitch, jitter, shimmer, etc.) are comparable — improving model consistency and reliability.</p>
-   </details>
+      <details>
+         <summary>Why do I need to say a fixed phrase?</summary>
+         <p>Using the same phrase for all users ensures that extracted voice features (pitch, jitter, shimmer, etc.) are comparable — improving model consistency and reliability.</p>
+      </details>
 
-   <details>
-      <summary>Can I use this app without sharing my personal details?</summary>
-      <p>Yes&comma; you can use it anonymously. We only require minimal info (e.g., age, sex) to improve accuracy. All identifying details are optional and securely handled.</p>
-   </details>
+      <details>
+         <summary>Can I use this app without sharing my personal details?</summary>
+         <p>Yes&comma; you can use it anonymously. We only require minimal info (e.g., age, sex) to improve accuracy. All identifying details are optional and securely handled.</p>
+      </details>
 
-   <details>
-      <summary>Is this tool approved by doctors?</summary>
-      <p>This project is based on peer-reviewed research (e.g., PLOS, PMC studies) and follows scientific methods for feature extraction — but it’s not a replacement for medical consultation. Always confirm results with a qualified clinician.</p>
-   </details>
+      <details>
+         <summary>Is this tool approved by doctors?</summary>
+         <p>This project is based on peer-reviewed research (e.g., PLOS, PMC studies) and follows scientific methods for feature extraction — but it&apos;s not a replacement for medical consultation. Always confirm results with a qualified clinician.</p>
+      </details>
 
-   <details>
-      <summary>Can I see how my data is used?</summary>
-      <p>Yes. The app displays extracted numerical features (like average pitch, HR, HRV) and shows how they contribute to the estimated risk score. You can also download your anonymized data if you wish.</p>
+      <details>
+         <summary>Can I see how my data is used?</summary>
+         <p>Yes. The app displays extracted numerical features (like average pitch, HR, HRV) and shows how they contribute to the estimated risk score. You can also download your anonymized data if you wish.</p>
 
-   </details>
+      </details>
 
-   <details>
-      <summary>What if I get a “High Risk” result?</summary>
-      <p>Treat it as a screening flag, not a diagnosis. You should consult a healthcare provider and consider a blood glucose or HbA1c test for confirmation.</p>
-   </details>
+      <details>
+         <summary>What if I get a “High Risk” result?</summary>
+         <p>Treat it as a screening flag, not a diagnosis. You should consult a healthcare provider and consider a blood glucose or HbA1c test for confirmation.</p>
+      </details>
    
    </section>
 
@@ -172,8 +196,6 @@
 
 </main>
 
-<br>
-<br>
 <br>
 
 <footer>

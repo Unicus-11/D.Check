@@ -1,3 +1,9 @@
-h1{
-    color:rgb(2, 255, 99);
+nav ul {
+    list-style-type: none;
+    display : flex;
+    text-decoration: none;
+    gap: 20px;
+}
+.Link {
+    gap: 60 px;
 }

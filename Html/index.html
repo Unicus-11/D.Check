@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-   
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel=""stylesheet" href="/Css/app.css">
-
+   <link rel="stylesheet" href="../Css/app.css">
    <title>D.check</title>
+   <link rel="icon" type="image" href="images/logofavicon.png">
 </head>
 
 <body>
-<nav>
-   <img src="images/logo.png" width="40" height="30" alt="Dcheck Logo">
-   
+
+<nav>   
    <ul>
-      <li><a href="login.html">Login</a></li>
-      <li><a href="Register.html">Register</a></li>
-   </ul>
-   
-   <ul>
+      <li><img src="images/logo.png" width="40" height="30" alt="Dcheck Logo"></li>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="health.html">Health & Fitness</a></li>
-      <li><a href="diet.html">Diet & Nutrition</a></li>
       <li><a href="check.html">Check Up</a></li>
       <li><a href="weekly.html">Weekly Report</a></li>
-      <li><a href="info.html">Info Hub</a></li>
-      <li><a href="water.html">Water Tracker</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a class="Link" href="login.html">Login</a></li>
+      <li><a class="Link" href="Register.html">Register</a></li>
    </ul>
 </nav>
 
 <header>
    <h1>A Fit, Healthy body - Best Fashion Statement</h1>
-   <img width=500 src ="images/Patient_clinic.png">
-   <a href="check.html"><button>Check your dibetes risk </button></a> 
-   <br>Your data are private, safe and secure </header>
+   <img width=500 src ="images/Patient_clinic.png" alt="Patient_clinic" float="right">
+   <button onclick="document.location='check.html'"=>Check your dibetes risk </button>
+   <br>Your data are private, safe and secure
+    
+</header>
 
 <main>
 
@@ -63,10 +58,10 @@
 
    </section>
 
-   <section id ="how to use">
+   <section id ="how-to-use">
 
       <p>How does D.Check work?</p>
-      <h3>Do a dibetes risk check in 3 steps. Its that simple!</h3>
+      <p>Do a dibetes risk check in 3 steps. Its that simple!</h3>
       <ul>
          <li>Speak a short fixed phrase (e.g., “Health is my greatest wealth”) for 6&dash;10 seconds.
          Our system analyzes vocal tone and micro-variations to extract health-related acoustic features <img width="200" src="images/record.png" alt=" Step 1 recording logo"></li>
@@ -83,8 +78,19 @@
       
    </section>
 
+   <section id="info">
+
+      <p>Browse Latest Info regarding Dibetes</p>
+
+      <p>Stay informed with the latest updates, health tips, and global trends about diabetes care and prevention.</p>
+
+      <a href="info.html"><button >Browse</button></a>
+
+   </section>  add more html in this
+
+
    <section id ="Trust">
-      <h3>Your data has only one owner. <bold>YOU!</bold></h3>
+      <h3>Your data has only one owner. <span id="You">YOU!</span></h3>
       <ul>
          <li>You can use D.Check anonymously. No personal details are required.</li>
          <li>D.Checkdoes not sell or share your data with any third party</li>
@@ -94,10 +100,7 @@
 
 
 
-   <section id="info">
-      <p>Browse Latest Info regarding Dibetes</p>
-      <a href="info.html"><button >Browse</button></a>
-   </section>
+
 
 
   
@@ -190,9 +193,9 @@
    </ul>
 
    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="login.html">Login</a></li>
-      <li><a href="register.html">Register</a></li>
+      <li><a class="Link" href="index.html">Home</a></li>
+      <li><a class="Link" href="login.html">Login</a></li>
+      <li><a class="Link" href="register.html">Register</a></li>
    </ul>
 
    <p>&copy; 2025 Dcheck. All rights reserved.</p>

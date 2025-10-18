@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+
+
+   <nav>   
+      <ul>
+         <li><img src="images/logo.png" width="89"  alt="Dcheck Logo"></li>
+         <li><a href="index.html">Home</a></li>
+      </ul>
+   </nav>
+   <h2>Basic Information</h2>
+   <form action="/submit" method="post">
+
+      <label for ="age">Age:</label>
+      <input type ="number" id="age" name="age" required>
+      <br><br>
+
+      <label>Sex:</label>
+      <br>
+
+      <input type="radio" id="male" name="sex">
+      <label for="male">male:</label>
+      
+      <input type="radio" id="female" name="sex">
+      <label for="female">female:</label>
+   
+      <input type="radio" id="male" name="sex">
+      <label for="other">Other/Prefer not to say:</label>
+      
+
+      <br><br> 
+
+      <label for="height"> Height:</label>
+      <input text="number"  id="height" name="height" required> cm
+
+      <br><br>
+
+      <label for="weight"> Weight:</label>
+      <input text="number"  id="weight" name="weight" required> kg
+
+      <br><br>
+
+      <label for="waist">Waist circumference:</label>
+      <input text="number"  id="waist" name="Waist circumference" required> cm
+
+      <br><br>
+
+     
+      <label for="skin_tone">Skin Tone (Fitzpatrick Scale 1&dash;6):</label>
+      <br>
+
+      <select id="skin_tone" name="skin_tone" required>
+         <option value="">--Select--</option>
+         <option value="1">Type I &dash; Very fair, always burns, never tans</option>
+         <option value="2">Type II &dash; Fair, usually burns, tans minimally</option>
+         <option value="3">Type III &dash; Medium, sometimes mild burn, tans uniformly</option>
+         <option value="4">Type IV &dash; Olive, rarely burns, tans easily</option>
+         <option value="5">Type V &dash; Brown, very rarely burns, tans very easily</option>
+         <option value="6">Type VI &dash; Dark brown/black, never burns, deeply pigmented</option>
+      </select>
+
+      <br><br>
+
+      <label for ="education-level">Education-Level: </label>
+      <br>
+
+      <label for="below">Below High School</label>
+      <input type="radio" id="below" name ="education-level" value="Below-High-School">
+
+      <label for="Graduate">Graduate</label>
+      <input type="radio" id="Graduate" name ="education-level" value="Graduate">
+
+      <label for="Post-Graduate">Post-Graduate</label>
+      <input type="radio" id="Post-Graduate" name ="education-level" value="Post-Graduate">
+
+      <hr>
+
+      <h2>SECTION 2 — Family & Medical History</h2>
+      <p>(captures genetic and metabolic predisposition)</p>
+
+      <label>9. Do you have a parent or sibling with diabetes?</label><br>
+      <input type="radio" name="family_diabetes" value="yes"> Yes
+      <input type="radio" name="family_diabetes" value="no"> No
+      <input type="radio" name="family_diabetes" value="unsure"> Unsure
+      <br><br>
+
+      <label>10. Have you ever been told by a doctor that you have high blood sugar or prediabetes?</label><br>
+      <input type="radio" name="prediabetes" value="yes"> Yes
+      <input type="radio" name="prediabetes" value="no"> No
+      <br><br>
+
+      <label>11. Have you ever been diagnosed with high blood pressure (hypertension)?</label><br>
+      <input type="radio" name="hypertension" value="yes"> Yes
+      <input type="radio" name="hypertension" value="no"> No
+      <input type="radio" name="hypertension" value="unsure"> Unsure
+      <br><br>
+
+      <label>12. Have you ever been diagnosed with high cholesterol or triglycerides?</label><br>
+      <input type="radio" name="cholesterol" value="yes"> Yes
+      <input type="radio" name="cholesterol" value="no"> No
+      <br><br>
+
+      <label>13. For women: Have you ever had gestational diabetes or delivered a baby &gt;4 kg (9 lb)?</label><br>
+      <input type="radio" name="gestational_diabetes" value="yes"> Yes
+      <input type="radio" name="gestational_diabetes" value="no"> No
+      <input type="radio" name="gestational_diabetes" value="na"> Not applicable
+      <br><br>
+
+      <label>14. Are you currently taking any regular medications?</label><br>
+      <input type="text" name="medications" placeholder="e.g. steroids, antidepressants, beta-blockers">
+      <br><br>
+
+      <label>15. Do you have any chronic conditions (thyroid, PCOS, cardiovascular disease, etc.)?</label><br>
+      <input type="radio" name="chronic" value="yes"> Yes
+      <input type="radio" name="chronic" value="no"> No<br>
+      <input type="text" name="chronic_details" placeholder="If yes, specify">
+      <br><br>
+
+      <hr>
+
+      
+      <h2>SECTION 3 — Lifestyle Factors</h2>
+      <p>(strong behavioral indicators of insulin sensitivity)</p>
+
+      <label>16. How often do you perform physical activity ≥30 min?</label><br>
+      <input type="radio" name="activity_freq" value="never"> Never
+      <input type="radio" name="activity_freq" value="1-2"> 1–2 times/week
+      <input type="radio" name="activity_freq" value="3-5"> 3–5 times/week
+      <input type="radio" name="activity_freq" value="daily"> Daily
+      <br><br>
+
+      <label>17. How would you describe your daily activity level?</label><br>
+      <input type="radio" name="activity_level" value="sitting"> Mostly sitting
+      <input type="radio" name="activity_level" value="light"> Light movement
+      <input type="radio" name="activity_level" value="active"> Active
+      <input type="radio" name="activity_level" value="very_active"> Very active
+      <br><br>
+
+      <label>18. How many servings of fruits/vegetables per day?</label><br>
+      <input type="radio" name="fruits_veg" value="0-1"> 0–1
+      <input type="radio" name="fruits_veg" value="2-3"> 2–3
+      <input type="radio" name="fruits_veg" value="4+"> 4+
+      <br><br>
+
+      <label>19. How often do you eat processed/fried/sugary foods?</label><br>
+      <input type="radio" name="junk_food" value="rarely"> Rarely
+      <input type="radio" name="junk_food" value="weekly"> Weekly
+      <input type="radio" name="junk_food" value="several"> Several times/week
+      <input type="radio" name="junk_food" value="daily"> Daily
+      <br><br>
+
+      <label>20. How many hours of sleep per night?</label><br>
+      <input type="radio" name="sleep" value="<5">&lt;5
+      <input type="radio" name="sleep" value="5-6">5–6
+      <input type="radio" name="sleep" value="7-8">7–8
+      <input type="radio" name="sleep" value=">8">&gt;8
+      <br><br>
+
+      <label>21. Do you smoke?</label><br>
+      <input type="radio" name="smoke" value="never"> Never
+      <input type="radio" name="smoke" value="occasionally"> Occasionally
+      <input type="radio" name="smoke" value="regularly"> Regularly
+      <input type="radio" name="smoke" value="former"> Former smoker
+      <br><br>
+
+      <label>22. Do you drink alcohol?</label><br>
+      <input type="radio" name="alcohol" value="never"> Never
+      <input type="radio" name="alcohol" value="occasionally"> Occasionally
+      <input type="radio" name="alcohol" value="regularly"> Regularly
+      <br><br>
+
+      <label>23. Do you experience frequent stress?</label><br>
+      <input type="radio" name="stress" value="rarely"> Rarely
+      <input type="radio" name="stress" value="sometimes"> Sometimes
+      <input type="radio" name="stress" value="often"> Often
+      <br><br>
+
+      <hr>
+
+      <h2>SECTION 4 — Symptoms (last 3 months)</h2>
+
+      <label>24. Urinate more often than usual, especially at night?</label><br>
+      <input type="radio" name="urination" value="yes"> Yes
+      <input type="radio" name="urination" value="no"> No
+      <br><br>
+
+      <label>25. Feel unusually thirsty most of the time?</label><br>
+      <input type="radio" name="thirst" value="yes"> Yes
+      <input type="radio" name="thirst" value="no"> No
+      <br><br>
+
+      <label>26. Unexplained weight loss recently?</label><br>
+      <input type="radio" name="weight_loss" value="yes"> Yes
+      <input type="radio" name="weight_loss" value="no"> No
+      <br><br>
+
+      <label>27. Feel fatigued or low on energy most days?</label><br>
+      <input type="radio" name="fatigue" value="yes"> Yes
+      <input type="radio" name="fatigue" value="no"> No
+      <br><br>
+
+      <label>28. Experienced blurred vision?</label><br>
+      <input type="radio" name="vision" value="yes"> Yes
+      <input type="radio" name="vision" value="no"> No
+      <br><br>
+
+      <label>29. Tingling or numbness in feet or hands?</label><br>
+      <input type="radio" name="tingling" value="yes"> Yes
+      <input type="radio" name="tingling" value="no"> No
+      <br><br>
+
+      <hr>
+
+      <h2>SECTION 5 — Behavioral and Psychological</h2>
+
+      <label>30. How would you rate your overall health?</label><br>
+      <input type="radio" name="health_rating" value="excellent"> Excellent
+      <input type="radio" name="health_rating" value="good"> Good
+      <input type="radio" name="health_rating" value="fair"> Fair
+      <input type="radio" name="health_rating" value="poor"> Poor
+      <br><br>
+
+      <label>31. How often do you feel low mood or lack motivation?</label><br>
+      <input type="radio" name="mood" value="rarely"> Rarely
+      <input type="radio" name="mood" value="sometimes"> Sometimes
+      <input type="radio" name="mood" value="often"> Often
+      <br><br>
+
+      <label>32. Sleep problems, snoring, or irregular breathing during sleep?</label><br>
+      <input type="radio" name="sleep_issues" value="yes"> Yes
+      <input type="radio" name="sleep_issues" value="no"> No
+      <br><br>
+
+      <hr>
+
+      <h2>SECTION 6 — Sensor Context Metadata</h2>
+
+      <label>33. Was your finger dry and warm before measurement?</label><br>
+      <input type="radio" name="finger_ready" value="yes"> Yes
+      <input type="radio" name="finger_ready" value="no"> No
+      <br><br>
+
+      <label>34. Which finger did you use?</label><br>
+      <input type="radio" name="finger_used" value="index"> Index
+      <input type="radio" name="finger_used" value="middle"> Middle
+      <input type="radio" name="finger_used" value="ring"> Ring
+      <input type="radio" name="finger_used" value="thumb"> Thumb
+      <br><br>
+
+      <label>35. Was the room well-lit during measurement?</label><br>
+      <input type="radio" name="room_light" value="low"> Low
+      <input type="radio" name="room_light" value="normal"> Normal
+      <input type="radio" name="room_light" value="bright"> Bright
+      <br><br>
+
+      <label>36. Were you seated and still during the measurement?</label><br>
+      <input type="radio" name="stillness" value="yes"> Yes
+      <input type="radio" name="stillness" value="no"> No
+      <br><br>
+
+      <label>37. Did you speak in your normal tone during voice test?</label><br>
+      <input type="radio" name="normal_tone" value="yes"> Yes
+      <input type="radio" name="normal_tone" value="no"> No
+      <br><br>
+
+      <label>38. Was there background noise during voice test?</label><br>
+      <input type="radio" name="noise" value="low"> Low
+      <input type="radio" name="noise" value="medium"> Medium
+      <input type="radio" name="noise" value="high"> High
+      <br><br>
+
+   
+<!--
+      <h2>SECTION 7 — Derived Score (Auto Calculated)</h2>
+      <p>BMI = weight(kg) / (height(m))²</p>
+      <p>Lifestyle index: Q16&dash;23</p>
+      <p>Symptom index: Q24&dash;29</p>
+      <p>Family risk index: Q9&dash;13</p>-->
+
+      <button type="submit">Submit</button>
+
+      </form>
+
+
+
+
+</body>
+</html>
